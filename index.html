@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — CS Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
 
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">YN</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">M.S. Candidate · Computer Science</p>
+      <h1 class="hero-name">Your<br /><em>Name</em></h1>
+      <p class="hero-sub">Research interests: <span class="accent">Your Research Area</span> · Your University</p>
+      <div class="hero-cta">
+        <a href="#publications" class="btn-primary">View Publications</a>
+        <a href="assets/cv.pdf" class="btn-ghost" target="_blank">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-line"></div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>A brief introduction.</h2>
+            <p>
+              I am a Master's student in Computer Science at <strong>Your University</strong>,
+              advised by <strong>Professor Name</strong>. My research focuses on
+              [your research area], with particular interest in [specific topics].
+            </p>
+            <p>
+              Before joining the graduate program, I completed my B.S. in [field] at
+              [institution]. I am interested in [broader goals — industry, PhD, research lab, etc.].
+            </p>
+          </div>
+          <div class="about-aside">
+            <div class="about-card">
+              <div class="about-card-row">
+                <span class="card-label">Status</span>
+                <span>M.S. Candidate</span>
+              </div>
+              <div class="about-card-row">
+                <span class="card-label">University</span>
+                <span>Your University</span>
+              </div>
+              <div class="about-card-row">
+                <span class="card-label">Lab</span>
+                <span>Your Lab Name</span>
+              </div>
+              <div class="about-card-row">
+                <span class="card-label">Location</span>
+                <span>City, Korea</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-inner">
+        <div class="section-label">02 — Education</div>
+        <h2>Academic Background</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 — Present</span>
+                <span class="timeline-tag">Current</span>
+              </div>
+              <h3>M.S. in Computer Science</h3>
+              <p class="timeline-place">Your University, Korea</p>
+              <p class="timeline-desc">Thesis: <em>"Your thesis title or research direction"</em>. Advised by Prof. Name.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year">2019 — 2023</span>
+              </div>
+              <h3>B.S. in Computer Science</h3>
+              <p class="timeline-place">Your Undergraduate University, Korea</p>
+              <p class="timeline-desc">Graduated with honors. GPA: X.XX / 4.5.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="section-inner">
+        <div class="section-label">03 — Publications</div>
+        <h2>Research Output</h2>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <div class="pub-venue-badge">CONFERENCE · 2024</div>
+            <h3 class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</h3>
+            <p class="pub-authors"><strong>Your Name</strong>, Co-author One, Co-author Two, Advisor Name</p>
+            <p class="pub-venue">Proceedings of the Conference Name (CONF 2024)</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+              <a href="#" class="pub-link">Code</a>
+              <a href="#" class="pub-link">Slides</a>
+            </div>
+          </div>
+
+          <!-- Add more publications here following the same pattern -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="section-label">04 — Skills</div>
+        <h2>Technical Toolkit</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">Java</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Frameworks & Libraries</h4>
+            <div class="skill-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Tools</h4>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Docker</span>
+              <span class="tag">LaTeX</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Research Areas</h4>
+            <div class="skill-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Your Area</span>
+              <span class="tag">Your Area</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-label">05 — Contact</div>
+        <div class="contact-grid">
+          <div>
+            <h2>Get in touch.</h2>
+            <p>I am open to research collaborations, internship opportunities, and general inquiries. Feel free to reach out via email.</p>
+          </div>
+          <div class="contact-info">
+            <a href="mailto:yourname@university.ac.kr" class="contact-line">
+              <span class="contact-type">Email</span>
+              <span class="contact-value">yourname@university.ac.kr</span>
+            </a>
+            <a href="https://github.com/yourusername" class="contact-line" target="_blank">
+              <span class="contact-type">GitHub</span>
+              <span class="contact-value">github.com/yourusername</span>
+            </a>
+            <a href="https://scholar.google.com" class="contact-line" target="_blank">
+              <span class="contact-type">Google Scholar</span>
+              <span class="contact-value">View Profile</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 Your Name</span>
+      <span>Built with GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
