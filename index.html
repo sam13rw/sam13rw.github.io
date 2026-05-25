@@ -7,259 +7,185 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <span class="nav-logo">SD</span>
+      <span class="nav-logo">SDV</span>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#publications">publications</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="hero">
-    <div class="hero-inner">
-      <p class="hero-tag">M.S. Candidate · Computer Science</p>
-      <h1 class="hero-name">Samuel David<br /><em>Vincent</em></h1>
-      <p class="hero-sub">Research interests: <span class="accent">Privacy& Security in image generation models, Optimization of large language models</span> · Dongseo University</p>
-      <div class="hero-cta">
-        <a href="#publications" class="btn-primary">View Publications</a>
-        <a href="assets/cv.pdf" class="btn-ghost" target="_blank">Download CV</a>
-      </div>
-    </div>
-    <div class="hero-line"></div>
-  </header>
+  <div class="page">
 
-  <main>
-
-    <!-- ABOUT -->
+    <!-- HERO -->
     <section id="about">
-      <div class="section-inner">
-        <div class="section-label">01 — About</div>
-        <div class="about-grid">
-          <div class="about-text">
-            <h2>A brief introduction.</h2>
-            <p>
-              I am a Master's student in Computer Science at <strong>Dongseo University, Busan, South Korea</strong>,
-              advised by <strong>Dr. Dae-Ki Kang</strong>. My research focuses on 
-              privacy and security in AI, with particular interest in image generation models.
-            </p>
-            <p>
-              Before joining the graduate program, I completed my B.Tech. in Electronics and Communications at
-              Hindustan Institute of Technology and Science, Chennai, India.
-            </p>
-          </div>
-          <div class="about-aside">
-            <div class="about-card">
-              <div class="about-card-row">
-                <span class="card-label">Status</span>
-                <span>M.S. Candidate</span>
-              </div>
-              <div class="about-card-row">
-                <span class="card-label">University</span>
-                <span>Dongseo University</span>
-              </div>
-              <div class="about-card-row">
-                <span class="card-label">Lab</span>
-                <span>ML & DL Lab</span>
-              </div>
-              <div class="about-card-row">
-                <span class="card-label">Sasang-gu</span>
-                <span>Busan, South Korea</span>
-              </div>
-            </div>
+      <div class="hero-layout">
+        <div class="hero-photo">
+          <!-- Replace src with your actual photo, e.g. src="assets/photo.jpg" -->
+          <div class="photo-placeholder">photo</div>
+        </div>
+        <div class="hero-bio">
+          <h1>Samuel David Vincent</h1>
+          <p class="hero-role">M.S. Candidate · Computer Science · Dongseo University</p>
+          <p>
+            I am a Master's student in Computer Science at <strong>Dongseo University, Busan, South Korea</strong>,
+            advised by <strong>Dr. Dae-Ki Kang</strong> in the ML &amp; DL Lab.
+            My research focuses on privacy and security in AI — in particular,
+            inference attacks and vulnerabilities in image generation models.
+          </p>
+          <p>
+            Before joining the graduate program, I completed my B.Tech. in Electronics and Communications at
+            Hindustan Institute of Technology and Science, Chennai, India.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:yourname@dongseo.ac.kr">✉ Email</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            <a href="assets/cv.pdf" target="_blank">CV (PDF)</a>
           </div>
         </div>
       </div>
     </section>
+
+    <hr class="section-divider" />
 
     <!-- EDUCATION -->
     <section id="education">
-      <div class="section-inner">
-        <div class="section-label">02 — Education</div>
-        <h2>Academic Background</h2>
-        <div class="timeline">
+      <h2>Education</h2>
+      <div class="edu-list">
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-meta">
-                <span class="timeline-year">2024 — Present</span>
-                <span class="timeline-tag">Current</span>
-              </div>
-              <h3>M.S. in Computer Science</h3>
-              <p class="timeline-place">Your University, Korea</p>
-              <p class="timeline-desc">Thesis: <em>"The Blind Who See: Blind Inference Attack employing Cutvature Estimation"</em>. Advised by Prof. Dae-Ki Kang.</p>
-            </div>
+        <div class="edu-item">
+          <span class="edu-year">2024 — present</span>
+          <div class="edu-body">
+            <h3>M.S. in Computer Science</h3>
+            <p class="edu-place">Dongseo University, Busan, South Korea</p>
+            <p>Thesis: <em>"The Blind Who See: Blind Inference Attack employing Curvature Estimation."</em> Advised by Prof. Dae-Ki Kang.</p>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-meta">
-                <span class="timeline-year">2020 - 2024</span>
-              </div>
-              <h3>B.Tech. in Electronics and Communications</h3>
-              <p class="timeline-place">Hindustan Institute of Technology and Science, Chennai, India</p>
-              <p class="timeline-desc">Graduated with honors. GPA: 8.XX / 10.</p>
-            </div>
-          </div>
-
         </div>
+
+        <div class="edu-item">
+          <span class="edu-year">2020 — 2024</span>
+          <div class="edu-body">
+            <h3>B.Tech. in Electronics and Communications</h3>
+            <p class="edu-place">Hindustan Institute of Technology and Science, Chennai, India</p>
+            <p>Graduated with honors. GPA: 8.XX / 10.</p>
+          </div>
+        </div>
+
       </div>
     </section>
+
+    <hr class="section-divider" />
 
     <!-- PUBLICATIONS -->
     <section id="publications">
-      <div class="section-inner">
-        <div class="section-label">03 — Publications</div>
-        <h2>Research Output</h2>
-        <div class="pub-list">
+      <h2>Publications</h2>
+      <div class="pub-list">
 
-          <div class="pub-item">
-            <div class="pub-venue-badge">CONFERENCE · 2024</div>
-            <h3 class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</h3>
-            <p class="pub-authors"><strong>Your Name</strong>, Co-author One, Co-author Two, Advisor Name</p>
+        <div class="pub-item">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <div class="pub-venue-badge">Conference</div>
+            <p class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</p>
+            <p class="pub-authors"><strong>Samuel David Vincent</strong>, Co-author One, Co-author Two, Dae-Ki Kang</p>
             <p class="pub-venue">Proceedings of the Conference Name (CONF 2024)</p>
             <div class="pub-links">
-              <a href="#" class="pub-link">Paper</a>
-              <a href="#" class="pub-link">Code</a>
-              <a href="#" class="pub-link">Slides</a>
+              <a href="#">[Paper]</a>
+              <a href="#">[Code]</a>
+              <a href="#">[Slides]</a>
             </div>
           </div>
-
-          <!-- Add more publications here following the same pattern -->
-
         </div>
+
+        <!-- Add more publications following the same pattern -->
+
       </div>
     </section>
+
+    <hr class="section-divider" />
 
     <!-- SKILLS -->
     <section id="skills">
-      <div class="section-inner">
-        <div class="section-label">04 — Skills</div>
-        <h2>Technical Toolkit</h2>
-        <div class="skills-grid">
+      <h2>Skills</h2>
+      <div class="skills-block">
 
-          <div class="skill-group">
-            <h4>Languages</h4>
-            <div class="skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">C++</span>
-              <span class="tag">Java</span>
-              <span class="tag">JavaScript</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Frameworks & Libraries</h4>
-            <div class="skill-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">TensorFlow</span>
-              <span class="tag">NumPy</span>
-              <span class="tag">scikit-learn</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Tools</h4>
-            <div class="skill-tags">
-              <span class="tag">Git</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Docker</span>
-              <span class="tag">LaTeX</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h4>Research Areas</h4>
-            <div class="skill-tags">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Your Area</span>
-              <span class="tag">Your Area</span>
-            </div>
-          </div>
-
+        <div class="skill-row">
+          <span class="skill-row-label">Languages</span>
+          <span class="skill-row-items">Python, C++, Java, JavaScript</span>
         </div>
+
+        <div class="skill-row">
+          <span class="skill-row-label">Frameworks</span>
+          <span class="skill-row-items">PyTorch, TensorFlow, NumPy, scikit-learn</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-row-label">Tools</span>
+          <span class="skill-row-items">Git, Linux, Docker, LaTeX</span>
+        </div>
+
+        <div class="skill-row">
+          <span class="skill-row-label">Research</span>
+          <span class="skill-row-items">Machine Learning, Privacy & Security in AI, Image Generation Models, LLM Optimization</span>
+        </div>
+
       </div>
     </section>
+
+    <hr class="section-divider" />
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="section-inner">
-        <div class="section-label">05 — Contact</div>
-        <div class="contact-grid">
-          <div>
-            <h2>Get in touch.</h2>
-            <p>I am open to research collaborations, internship opportunities, and general inquiries. Feel free to reach out via email.</p>
+      <h2>Contact</h2>
+      <div class="contact-block">
+        <p>I am open to research collaborations, internship opportunities, and general inquiries.</p>
+        <div class="contact-entries">
+          <div class="contact-entry">
+            <span class="contact-entry-label">Email</span>
+            <a href="mailto:yourname@dongseo.ac.kr">yourname@dongseo.ac.kr</a>
           </div>
-          <div class="contact-info">
-            <a href="mailto:yourname@university.ac.kr" class="contact-line">
-              <span class="contact-type">Email</span>
-              <span class="contact-value">yourname@university.ac.kr</span>
-            </a>
-            <a href="https://github.com/yourusername" class="contact-line" target="_blank">
-              <span class="contact-type">GitHub</span>
-              <span class="contact-value">github.com/yourusername</span>
-            </a>
-            <a href="https://scholar.google.com" class="contact-line" target="_blank">
-              <span class="contact-type">Google Scholar</span>
-              <span class="contact-value">View Profile</span>
-            </a>
+          <div class="contact-entry">
+            <span class="contact-entry-label">GitHub</span>
+            <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+          </div>
+          <div class="contact-entry">
+            <span class="contact-entry-label">Google Scholar</span>
+            <a href="https://scholar.google.com" target="_blank">View profile</a>
+          </div>
+          <div class="contact-entry">
+            <span class="contact-entry-label">Location</span>
+            <span>Sasang-gu, Busan, South Korea</span>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
+  </div><!-- /.page -->
 
   <footer>
-    <div class="footer-inner">
-      <span>© 2025 Your Name</span>
-      <span>Built with GitHub Pages</span>
-    </div>
+    <span>© 2025 Samuel David Vincent</span>
+    <span>Built with GitHub Pages</span>
   </footer>
 
   <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
     // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-
-    // Close mobile nav on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => navLinks.classList.remove('open'));
-    });
-
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('section').forEach(s => observer.observe(s));
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(link =>
+      link.addEventListener('click', () => navLinks.classList.remove('open'))
+    );
   </script>
 
 </body>
