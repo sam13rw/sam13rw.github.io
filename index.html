@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -15,177 +15,210 @@
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-logo">SDV</span>
-      <ul class="nav-links">
-        <li><a href="#about">about</a></li>
-        <li><a href="#education">education</a></li>
-        <li><a href="#publications">publications</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#contact">contact</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
     </div>
   </nav>
 
-  <div class="page">
+  <div class="page-wrap">
 
-    <!-- HERO -->
-    <section id="about">
-      <div class="hero-layout">
-        <div class="hero-photo">
-          <!-- Replace src with your actual photo, e.g. src="assets/photo.jpg" -->
-          <div class="photo-placeholder">photo</div>
-        </div>
-        <div class="hero-bio">
+    <!-- PROFILE HEADER -->
+    <header id="about">
+      <div class="profile-row">
+        <div class="profile-text">
           <h1>Samuel David Vincent</h1>
-          <p class="hero-role">M.S. Candidate · Computer Science · Dongseo University</p>
-          <p>
-            I am a Master's student in Computer Science at <strong>Dongseo University, Busan, South Korea</strong>,
-            advised by <strong>Dr. Dae-Ki Kang</strong> in the ML &amp; DL Lab.
-            My research focuses on privacy and security in AI — in particular,
-            inference attacks and vulnerabilities in image generation models.
+          <p class="profile-title">M.S. Candidate in Computer Science<br>
+            <a href="https://www.dongseo.ac.kr" target="_blank" rel="noopener">Dongseo University</a>, Busan, South Korea
           </p>
-          <p>
-            Before joining the graduate program, I completed my B.Tech. in Electronics and Communications at
-            Hindustan Institute of Technology and Science, Chennai, India.
+
+          <p class="profile-bio">
+            I am a Master's student in Computer Science at <strong>Dongseo University</strong>,
+            advised by <strong>Prof. Dae-Ki Kang</strong> in the ML &amp; DL Lab.
+            My research focuses on <strong>privacy and security in AI</strong>, with particular interest
+            in image generation models and blind inference attacks.
           </p>
-          <div class="hero-links">
-            <a href="mailto:yourname@dongseo.ac.kr">✉ Email</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-            <a href="assets/cv.pdf" target="_blank">CV (PDF)</a>
+          <p class="profile-bio">
+            Before joining the graduate program, I completed my B.Tech. in Electronics and
+            Communications at Hindustan Institute of Technology and Science, Chennai, India.
+          </p>
+
+          <div class="profile-links">
+            <a href="mailto:yourname@dongseo.ac.kr">Email</a>
+            <span class="sep">/</span>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+            <span class="sep">/</span>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+            <span class="sep">/</span>
+            <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+        </div>
+
+        <div class="profile-sidebar">
+          <div class="info-block">
+            <div class="info-row">
+              <span class="info-label">Status</span>
+              <span class="info-value">M.S. Candidate</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Lab</span>
+              <span class="info-value">ML &amp; DL Lab</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Location</span>
+              <span class="info-value">Busan, South Korea</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Advisor</span>
+              <span class="info-value">Prof. Dae-Ki Kang</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <hr class="section-divider" />
+    <main>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="edu-list">
+      <!-- EDUCATION -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="edu-list">
 
-        <div class="edu-item">
-          <span class="edu-year">2024 — present</span>
-          <div class="edu-body">
-            <h3>M.S. in Computer Science</h3>
-            <p class="edu-place">Dongseo University, Busan, South Korea</p>
-            <p>Thesis: <em>"The Blind Who See: Blind Inference Attack employing Curvature Estimation."</em> Advised by Prof. Dae-Ki Kang.</p>
+          <div class="edu-item">
+            <div class="edu-year">2024 — Present</div>
+            <div class="edu-detail">
+              <div class="edu-degree">M.S. in Computer Science</div>
+              <div class="edu-school">Dongseo University, Busan, South Korea</div>
+              <div class="edu-note">
+                Thesis: <em>"The Blind Who See: Blind Inference Attack Employing Curvature Estimation"</em>.
+                Advised by Prof. Dae-Ki Kang.
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="edu-item">
-          <span class="edu-year">2020 — 2024</span>
-          <div class="edu-body">
-            <h3>B.Tech. in Electronics and Communications</h3>
-            <p class="edu-place">Hindustan Institute of Technology and Science, Chennai, India</p>
-            <p>Graduated with honors. GPA: 8.XX / 10.</p>
+          <div class="edu-item">
+            <div class="edu-year">2020 — 2024</div>
+            <div class="edu-detail">
+              <div class="edu-degree">B.Tech. in Electronics and Communications</div>
+              <div class="edu-school">Hindustan Institute of Technology and Science, Chennai, India</div>
+              <div class="edu-note">Graduated with honors. GPA: 8.XX / 10.</div>
+            </div>
           </div>
+
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- PUBLICATIONS -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="section-note">(*) denotes equal contribution</p>
 
-    <hr class="section-divider" />
+        <ol class="pub-list">
 
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <span class="pub-year">2024</span>
-          <div class="pub-body">
-            <div class="pub-venue-badge">Conference</div>
-            <p class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</p>
-            <p class="pub-authors"><strong>Samuel David Vincent</strong>, Co-author One, Co-author Two, Dae-Ki Kang</p>
-            <p class="pub-venue">Proceedings of the Conference Name (CONF 2024)</p>
+          <li class="pub-item">
+            <div class="pub-badge">CONFERENCE · 2024</div>
+            <div class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</div>
+            <div class="pub-authors"><strong>Samuel David Vincent</strong>, Co-author One, Co-author Two, Dae-Ki Kang</div>
+            <div class="pub-venue">Proceedings of the Conference Name (CONF 2024)</div>
             <div class="pub-links">
+              <a href="#">[Abstract]</a>
               <a href="#">[Paper]</a>
               <a href="#">[Code]</a>
               <a href="#">[Slides]</a>
             </div>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>Place your abstract text here. Describe the problem, your approach, and key results. This section expands on click so the page stays clean by default.</p>
+            </details>
+          </li>
+
+          <!-- Add more publications following the same pattern -->
+
+        </ol>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-table">
+
+          <div class="skills-row">
+            <div class="skills-label">Languages</div>
+            <div class="skills-values">Python, C++, Java, JavaScript</div>
+          </div>
+
+          <div class="skills-row">
+            <div class="skills-label">Frameworks</div>
+            <div class="skills-values">PyTorch, TensorFlow, NumPy, scikit-learn</div>
+          </div>
+
+          <div class="skills-row">
+            <div class="skills-label">Tools</div>
+            <div class="skills-values">Git, Linux, Docker, LaTeX</div>
+          </div>
+
+          <div class="skills-row">
+            <div class="skills-label">Research Areas</div>
+            <div class="skills-values">Privacy &amp; Security in AI, Image Generation Models, Adversarial Machine Learning, LLM Optimization</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          I am open to research collaborations, internship opportunities, and general inquiries.
+          The best way to reach me is by email.
+        </p>
+        <div class="contact-table">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a href="mailto:yourname@dongseo.ac.kr" class="contact-val">yourname@dongseo.ac.kr</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/yourusername" class="contact-val" target="_blank" rel="noopener">github.com/yourusername</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Google Scholar</span>
+            <a href="https://scholar.google.com" class="contact-val" target="_blank" rel="noopener">View Profile</a>
           </div>
         </div>
+      </section>
 
-        <!-- Add more publications following the same pattern -->
+    </main>
 
-      </div>
-    </section>
+    <footer>
+      <span>© 2025 Samuel David Vincent</span>
+      <span>Dongseo University · Busan, South Korea</span>
+    </footer>
 
-    <hr class="section-divider" />
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-block">
-
-        <div class="skill-row">
-          <span class="skill-row-label">Languages</span>
-          <span class="skill-row-items">Python, C++, Java, JavaScript</span>
-        </div>
-
-        <div class="skill-row">
-          <span class="skill-row-label">Frameworks</span>
-          <span class="skill-row-items">PyTorch, TensorFlow, NumPy, scikit-learn</span>
-        </div>
-
-        <div class="skill-row">
-          <span class="skill-row-label">Tools</span>
-          <span class="skill-row-items">Git, Linux, Docker, LaTeX</span>
-        </div>
-
-        <div class="skill-row">
-          <span class="skill-row-label">Research</span>
-          <span class="skill-row-items">Machine Learning, Privacy & Security in AI, Image Generation Models, LLM Optimization</span>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="section-divider" />
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-block">
-        <p>I am open to research collaborations, internship opportunities, and general inquiries.</p>
-        <div class="contact-entries">
-          <div class="contact-entry">
-            <span class="contact-entry-label">Email</span>
-            <a href="mailto:yourname@dongseo.ac.kr">yourname@dongseo.ac.kr</a>
-          </div>
-          <div class="contact-entry">
-            <span class="contact-entry-label">GitHub</span>
-            <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
-          </div>
-          <div class="contact-entry">
-            <span class="contact-entry-label">Google Scholar</span>
-            <a href="https://scholar.google.com" target="_blank">View profile</a>
-          </div>
-          <div class="contact-entry">
-            <span class="contact-entry-label">Location</span>
-            <span>Sasang-gu, Busan, South Korea</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div><!-- /.page -->
-
-  <footer>
-    <span>© 2025 Samuel David Vincent</span>
-    <span>Built with GitHub Pages</span>
-  </footer>
+  </div><!-- /page-wrap -->
 
   <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
     // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    document.querySelectorAll('.nav-links a').forEach(link =>
-      link.addEventListener('click', () => navLinks.classList.remove('open'))
-    );
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
   </script>
 
 </body>
