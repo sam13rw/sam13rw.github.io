@@ -116,24 +116,52 @@
       <!-- PUBLICATIONS -->
       <section id="publications">
         <h2>Publications</h2>
-        <p class="section-note">(*) denotes equal contribution</p>
 
         <ol class="pub-list">
 
           <li class="pub-item">
-            <div class="pub-badge">CONFERENCE · 2024</div>
-            <div class="pub-title">Your Paper Title Goes Here: A Study on Something Interesting</div>
-            <div class="pub-authors"><strong>Samuel David Vincent</strong>, Co-author One, Co-author Two, Dae-Ki Kang</div>
-            <div class="pub-venue">Proceedings of the Conference Name (CONF 2024)</div>
+            <div class="pub-badge">Journal · 2026</div>
+            <div class="pub-title">Regularizing Mixture of Experts under a Bayesian Lens</div>
+            <div class="pub-authors"><strong>Samuel David Vincent</strong>, Hans Richard Alim Natadjaja, Dae-Ki Kang</div>
+            <div class="pub-venue">Under Review at IEEE Access</div>
             <div class="pub-links">
-              <a href="#">[Abstract]</a>
-              <a href="#">[Paper]</a>
               <a href="#">[Code]</a>
-              <a href="#">[Slides]</a>
             </div>
             <details class="pub-abstract">
               <summary>Abstract</summary>
-              <p>Place your abstract text here. Describe the problem, your approach, and key results. This section expands on click so the page stays clean by default.</p>
+              <p>
+                Mixture-of-Experts (MoE) is a conditional computation architecture that partitions a model into multiple expert subnetworks and employs a trainable router to select a subset of experts for each input token.
+                Despite its efficiency in scaling Large Language Models (LLMs) while maintaining constant computational cost per token, MoE architectures often suffer from load imbalance, where only a few experts are repeatedly activated while others remain underutilized.
+                Existing auxiliary losses, which are designed to address this issue, are largely heuristic, lacking a unified theoretical foundation that enables principled improvement and interpretability.
+                To address this limitation, we propose Di-Pen, a Dirichlet-based penalty that regularizes the router's probability distribution during the LLM fine-tuning stage, exploring Bayesian methods.
+                This formulation provides a principled framework for the router, promoting future enhancements and theoretical grounds for regularizing from foundational Bayesian concepts.
+                By imposing a Di-Pen on the router’s probability distribution, it encourages better calibration and balanced expert utilization, improving existing routing mechanisms.
+                We further establish the convergence properties of the proposed regularizer and incorporate it as an auxiliary loss term within the fine-tuning objective.
+                Empirical results validate our theoretical analysis, notably the fine-tuned Huihui-MoE model achieves 78.24\% accuracy on GSM8K, outperforming the 48.22\% baseline. 
+                Similarly, the Qwen1.5-MoE model shows a substantial improvement on the ARC-Easy dataset, from 76.72\% to 90.65\%. 
+                These results demonstrate that Di-Pen enhances reasoning capability in MoE-based LLMs and provides a mathematically grounded path toward interpretable and stable routing optimization.
+              </p>
+            </details>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-badge">CONFERENCE · 2026</div>
+            <div class="pub-title">Are Generating Images of Knives Harmful? Context-Guided Concept Eraser in Stable Diffusion</div>
+            <div class="pub-authors"><strong>Samuel David Vincent</strong>, Yosua Setyawan Soekamto, Dae-Ki Kang</div>
+            <div class="pub-venue">Presented at 2026 10th International Conference on Cryptography, Security and Privacy (CSP 2026)</div>
+            <div class="pub-links">
+              <a href="https://drive.google.com/file/d/1GjutrRHLDpYu_w54pNY5KRqA0T_11uCw/view?usp=sharing">[Slides]</a>
+            </div>
+            <details class="pub-abstract">
+              <summary>Abstract</summary>
+              <p>
+                Large-scale image generation models are trained on a vast amount of unfiltered data from the internet, leading to the generation of harmful and NSFW content. 
+                Previous research on model unlearning utilized an anchor concept to preserve the generation of the unlearned model, yet they tend to overshoot the erasure of concepts, erasing the target concept along with all semantically related concepts.
+                This effect stems from the unlearning objective lacking the contextual structure required to differentiate harmful uses of a concept from benign ones.
+                We therefore propose (Context-guided Concepts) CgC, a pre-processing stage to accurately guide concept erasure to find the harmfulness of a concept under different contexts.
+                When evaluated on CLIP, our method produces the desired result, erasing the concepts in harmful contexts (a murderer with a knife) and preserving the concept in benign contexts (a chef with a knife).
+                CgC demonstrates improved performance over prior unlearning approaches while also attaining a more Pareto front in terms of fine-tuning time.
+              </p>
             </details>
           </li>
 
@@ -149,7 +177,7 @@
 
           <div class="skills-row">
             <div class="skills-label">Languages</div>
-            <div class="skills-values">Python, C++, Java, JavaScript</div>
+            <div class="skills-values">Python, C++, JavaScript</div>
           </div>
 
           <div class="skills-row">
@@ -159,7 +187,7 @@
 
           <div class="skills-row">
             <div class="skills-label">Tools</div>
-            <div class="skills-values">Git, Linux, Docker, LaTeX</div>
+            <div class="skills-values">Git, Docker, LaTeX</div>
           </div>
 
           <div class="skills-row">
@@ -174,21 +202,17 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>
-          I am open to research collaborations, internship opportunities, and general inquiries.
+          I am open to research collaborations, job opportunities, and general inquiries.
           The best way to reach me is by email.
         </p>
         <div class="contact-table">
           <div class="contact-row">
             <span class="contact-label">Email</span>
-            <a href="mailto:yourname@dongseo.ac.kr" class="contact-val">yourname@dongseo.ac.kr</a>
+            <a href="mailto:samueldavidvincent2003@gmail.com" class="contact-val">samueldavidvincent2003@gmail.com</a>
           </div>
           <div class="contact-row">
             <span class="contact-label">GitHub</span>
-            <a href="https://github.com/yourusername" class="contact-val" target="_blank" rel="noopener">github.com/yourusername</a>
-          </div>
-          <div class="contact-row">
-            <span class="contact-label">Google Scholar</span>
-            <a href="https://scholar.google.com" class="contact-val" target="_blank" rel="noopener">View Profile</a>
+            <a href="https://github.com/sam13rw" class="contact-val" target="_blank" rel="noopener">github.com/sam13rw</a>
           </div>
         </div>
       </section>
